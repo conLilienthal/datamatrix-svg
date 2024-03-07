@@ -23,7 +23,7 @@ svgNode = DATAMatrix({
     ,pad :   2
     ,pal : ["#000000", "#f2f4f8"]
     ,vrb :   0
-    ,gs1 :   1
+    ,gs1 :   0
 
 });
 ```
