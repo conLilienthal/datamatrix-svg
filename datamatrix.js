@@ -230,6 +230,11 @@ function DATAMatrix( Q ) {
 		k = toBase( text ); l = k.length;
 		if( l > 0 && l < el ) enc = k, el = l;
 
+        if(Q.gs1)
+        {
+            enc.unshift(232) /* Codeword 232 on beginning */
+            el++
+        }
 
 		var
 		h, w, nc = 1, nr = 1, fw, fh, /* symbol size, regions, region size */
