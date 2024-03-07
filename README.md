@@ -23,6 +23,7 @@ svgNode = DATAMatrix({
     ,pad :   2
     ,pal : ["#000000", "#f2f4f8"]
     ,vrb :   0
+    ,gs1 :   1
 
 });
 ```
@@ -34,3 +35,4 @@ svgNode = DATAMatrix({
 * **pad** - white space padding, default value is `2` blocks, set `0` for no padding.
 * **pal** - is array of [`color`,`background-color`] strings that represent hex color codes, default value is [`'#000'`] along with transparent background. Set [`'#000'`,`'#fff'`] to make background opaque.
 * **vrb** - svg node is optimized to be compact and default value is `0`, set this parameter to `1` in case you need more verbose output.
+* **gs1** - create GS1-DataMatrix compatible barcode.
